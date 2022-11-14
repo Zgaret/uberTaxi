@@ -2,6 +2,9 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none!important;
 }
+h1,h2,h3{
+    margin: 0;
+}
 .header{
     position: relative;
     &__nav{
@@ -11,7 +14,8 @@
         width: 100%; 
     }
     &__subheader{
-        position: relative;
+        position: absolute;
+        width: 100%;
         top: 50px;
         min-height: 84px;
         background-color: rgba(0,0,0, .6);
@@ -48,10 +52,13 @@
         color: #fff;
         text-align: right;
         line-height: 22px;
-        margin-top: 5px;
+        margin-top: 8px;
         &:hover{
             color: #ccc;
         }
+    }
+    &__btn-wrap{
+        margin-top: 27px;
     }
 }
 .menu{
@@ -77,23 +84,56 @@
     }
 }
 .btn{
-    display: block;
     box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12);
-    border: none;
     background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
     font-size: 14px;
     font-weight: normal;
     color: #fff;
-    padding: 13px 0px;
+    padding: 15px 22px;
     text-align: center;
     text-transform: uppercase;
     border-radius: 5px;
-    margin-top: 19px;
+    
     &:active{
         box-shadow: none;
     }
     &:hover{
         background-image: linear-gradient(to top, #249eb6, #4ce2ff);
         color: #fff;
+    }
+}
+.promo{
+    background-image: url(../img/promo_bg.jpg);
+    min-height: 800px;
+    padding-top: 218px;
+    text-align: center;
+    &__heading-big{
+        font-size: 60px;
+        font-weight: 900;
+        color: #fff;
+        line-height: 45px; 
+    }
+    &__heading-small{
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 25px;
+        margin-top: 24px;
+    }
+    &__text{
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.33;
+        color: #fff;
+        margin-top: 23px;
+        width: 955px;
+    }
+    &__btn{
+
+        font-size: 18px;
+        padding: 25px 39px;
+    }
+    &__btn-warp{
+        margin-top: 118px;
     }
 }
