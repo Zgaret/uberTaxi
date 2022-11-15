@@ -8,6 +8,9 @@ h1,h2,h3{
 p{
     margin: 0;
 }
+.container-my{
+    max-width: 1140px;
+}
 .header{
     position: relative;
     &__nav{
@@ -55,7 +58,7 @@ p{
         color: #fff;
         text-align: right;
         line-height: 22px;
-        margin-top: 8px;
+        margin-top: 3px;
         &:hover{
             color: #ccc;
         }
@@ -72,7 +75,7 @@ p{
     &__item{
         list-style-type: none;
         border-right: 2px dotted black;
-        padding-right: 45px;
+        padding-right: 30px;
         &:last-child{
             border-right: none;
             padding-right: 0;
@@ -92,7 +95,7 @@ p{
     font-size: 14px;
     font-weight: normal;
     color: #fff;
-    padding: 15px 22px;
+    padding: 15px 15px;
     text-align: center;
     text-transform: uppercase;
     border-radius: 5px;
@@ -107,6 +110,9 @@ p{
 }
 .promo{
     background-image: url(../img/promo_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 800px;
     padding-top: 218px;
     text-align: center;
@@ -129,7 +135,6 @@ p{
         line-height: 1.33;
         color: #fff;
         margin-top: 23px;
-        width: 955px;
     }
     &__btn{
 
