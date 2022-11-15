@@ -1,3 +1,5 @@
+@import '_variables.scss';
+@import '_mixins.scss';
 *{
     font-family: 'Roboto', sans-serif;
     text-decoration: none!important;
@@ -32,30 +34,22 @@ p{
         max-width: 100%;
     }
     &__logo-text{
-        font-size: 26px;
-        font-weight: normal;
-        letter-spacing: 1.95px;
-        color: #fff;
+        letter-spacing: 1.95px;;
         text-transform: uppercase;
         margin-left: 9px;
+        @include text($whiteTextColor, 26px, normal);
     }
     &__logo-descr{
-        font-size: 13px;
-        font-weight: 100;
-        color: rgba(255, 255, 255, 0.5);
+        @include text(rgba(255, 255, 255, 0.5), 13px, 100);
     }
     &__call-us-small-text{
-        font-size: 12px;
-        font-weight: 300;
-        color: #fff;
         margin-top: 20px;
         text-align: right;
+        @include text($whiteTextColor, 12px, 300);
     }
     &__phone{
         display: block;
-        font-size: 22px;
-        font-weight: normal;
-        color: #fff;
+        @include text($whiteTextColor, 22px, normal);
         text-align: right;
         line-height: 22px;
         margin-top: 3px;
@@ -82,9 +76,7 @@ p{
         }
     }
     &__link{
-        font-size: 15px;
-        font-weight: 300;
-        color: #fff;
+        @include text($whiteTextColor, 15px, 300);
         text-decoration: none;
         padding: 10px 0;
     }
@@ -92,9 +84,7 @@ p{
 .btn{
     box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12);
     background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
-    font-size: 14px;
-    font-weight: normal;
-    color: #fff;
+    @include text($whiteTextColor, 14px, normal);
     padding: 15px 15px;
     text-align: center;
     text-transform: uppercase;
@@ -105,7 +95,7 @@ p{
     }
     &:hover{
         background-image: linear-gradient(to top, #249eb6, #4ce2ff);
-        color: #fff;
+        color: $whiteTextColor;
     }
 }
 .promo{
@@ -117,27 +107,20 @@ p{
     padding-top: 218px;
     text-align: center;
     &__heading-big{
-        font-size: 60px;
-        font-weight: 900;
-        color: #fff;
+        @include text($whiteTextColor, 60px, 900);
         line-height: 45px; 
     }
     &__heading-small{
-        font-size: 36px;
-        font-weight: bold;
-        color: #fff;
+        @include text($whiteTextColor, 36px, bold);
         line-height: 25px;
         margin-top: 24px;
     }
     &__text{
-        font-size: 18px;
-        font-weight: normal;
+        @include text($whiteTextColor, 18px, normal);
         line-height: 1.33;
-        color: #fff;
         margin-top: 23px;
     }
     &__btn{
-
         font-size: 18px;
         padding: 25px 39px;
     }
@@ -154,19 +137,13 @@ p{
         padding-right: 46px;
     }
     &__section-descr{
-        font-size: 11px;
-        font-weight: 100;
-        color: #fff;
+        @include text($whiteTextColor, 11px, 100);
         padding: 8px 11px;
         background-color: #000;
         display: inline;
     }
     &__heading{
-        font-size: 38px;
-        font-weight: bold;
-        color: #222;
-        margin-top: 38px;
-        text-transform: uppercase;
+        @include headingH2;
     }
     &__wrap{
         margin-top: 35px;
@@ -191,15 +168,11 @@ p{
         min-height: 142px;
     }
     &__item-descr-heading{
-        font-size: 17px;
-        font-weight: normal;
-        color: #1eacc7;
+        @include text($siteColorBlue, 17px, normal);
     }
     &__item-descr-text{
-        font-size: 15px;
-        font-weight: 300;
+        @include text(#202020, 15px, 300);
         line-height: 1.4;
-        color: #202020;
         margin-top: 5px;
     }
 }
