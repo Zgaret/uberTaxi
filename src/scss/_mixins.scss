@@ -1,10 +1,4 @@
 @import '_variables.scss';
-@mixin headingH2 {
-        font-weight: bold;
-        color: $blackTextColor;
-        margin-top: 38px;
-        text-transform: uppercase;
-}
 @mixin text($color, $size, $weigth) {
     color: $color;
     font-size: $size;

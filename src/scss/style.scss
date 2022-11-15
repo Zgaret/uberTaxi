@@ -19,7 +19,8 @@ p{
         height: 50px;
         background-color: #212121;
         position: fixed;
-        width: 100%; 
+        width: 100%;
+        z-index: 999;
     }
     &__subheader{
         position: absolute;
@@ -132,25 +133,16 @@ p{
     padding-top: 71px;
     padding-bottom: 68px;
     text-align: center;
+    &__heading{
+        margin-top: 38px;
+    }
     &__item{
         padding-left: 36px;
         padding-right: 46px;
     }
-    &__section-descr{
-        @include text($whiteTextColor, 11px, 100);
-        padding: 8px 11px;
-        background-color: #000;
-        display: inline;
-    }
-    &__heading{
-        @include headingH2;
-    }
-    &__wrap{
-        margin-top: 35px;
-    }
     &__item{
         display: flex;
-        align-items: center;
+        margin-top: 39px;
     }
     &__item-icon-wrap{
         background-color: #1eacc7;
@@ -175,4 +167,72 @@ p{
         line-height: 1.4;
         margin-top: 5px;
     }
+}
+.title{
+    @include text($whiteTextColor, 11px, 100);
+    background-color: #000;
+    display: inline;
+    text-align: center;
+    padding: 8px 11px;
+}
+.heading{
+    font-weight: bold;
+    color: $blackTextColor;
+    text-transform: uppercase;
+    line-height: 32px;
+}
+.subheading{
+    font-size: 17px;
+    font-weight: normal;
+    color: $blackTextColor;
+}
+.mobile{
+    padding-top: 48px;
+    background-image: url(../img/crossBg.png);
+    min-height: 863px;
+    text-align: center;
+    
+    &__heading{
+        margin-top: 38px;
+    }
+    &__subhead{
+        margin-top: 19px;
+        line-height: 17px;
+    }
+    &__wrap{
+        margin-top: 13px;
+    }
+    &__item{
+        width: 320px;
+        min-height: 280px;
+        text-align: center;
+        margin-top: 19px;
+        position: relative;
+    }
+    // цикл который подставляет задний фон каждому элементу
+    @for $i from 1 through 6{
+        .mobile__item_#{$i}{
+            background-image: url(../img/mobail_#{$i}.jpg)
+        }
+    }
+    &__options{
+        @include text($whiteTextColor, 24px, normal);
+        text-transform: uppercase;
+        padding-top: 92px;
+    }
+    &__cross{
+        width: 26px;
+        height: 26px;
+        background-color: #000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
 }
