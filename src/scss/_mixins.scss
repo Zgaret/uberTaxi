@@ -4,3 +4,17 @@
     font-size: $size;
     font-weight: $weigth;
 }
+@mixin btnHover {
+    
+    &:hover{
+        background-image: none;
+        background-color: $siteColorBlue;
+        color: $whiteTextColor;
+    }
+    &:active{
+        border: 1px solid $siteColorBlue;
+        background-image: none;
+        background-color: $whiteTextColor;
+        color: $siteColorBlue;
+    }
+}
