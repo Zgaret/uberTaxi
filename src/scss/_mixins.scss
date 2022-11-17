@@ -5,7 +5,6 @@
     font-weight: $weigth;
 }
 @mixin btnHover {
-    
     &:hover{
         background-image: none;
         background-color: $siteColorBlue;

@@ -4,6 +4,11 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none!important;
 }
+a:hover{
+    color: $siteColorBlue;
+    transition: 0.5s all;
+
+}
 h1,h2,h3{
     margin: 0;
 }
@@ -91,6 +96,7 @@ p{
     text-transform: uppercase;
     border-radius: 5px;
     @include btnHover;
+    transition: none!important;
 }
 .promo{
     background-image: url(../img/promo_bg.jpg);
@@ -345,5 +351,70 @@ p{
         display: inline-block;
         margin-top: 486px;
         @include text(#1fbad6, 15px, normal);
+    }
+}
+.footer{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 148px;
+        padding: 0 62px;
+    }
+    &__item-wrap{
+        width: 33%;
+    }
+    &__social{
+        display: flex;
+    }
+    &__social-link{
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        align-items: center;
+        background-color: #070716;
+        color: $whiteTextColor;
+        margin-left: 9px;
+        .fa-brands{
+            font-size: 14px;
+        }
+    }
+    &__app{
+        text-align: right;
+    }
+    &__main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__line{
+        width: 299px;
+        height: 4px;
+        background-color: #1fbad6;
+        margin-top: 14px;
+    }
+    &__main-big-links{
+        margin-top: 22px;
+    }
+    &__main-small-links{
+        margin-bottom: 5px;
+    }
+    &__main-big-link{
+        @include text(#070716, 15px, 300);
+        text-transform: uppercase;
+    }
+    &__main-small-link{
+        @include text(#999, 11px, 300);
+        text-transform: uppercase;
+    }
+    &__app-item-img{
+        border-radius: 5px;
+    }
+    &__languege{
+        @include text(#1fbad6, 11px, normal);
+        text-transform: uppercase;
+        margin-bottom: 31px;
     }
 }
