@@ -33,6 +33,9 @@ p{
         margin-top: 16px;
         max-width: 100%;
     }
+    &__logo-icon-mobile{
+        display: none;
+    }
     &__logo-text{
         letter-spacing: 1.95px;;
         text-transform: uppercase;
@@ -53,6 +56,9 @@ p{
         text-align: right;
         line-height: 22px;
         margin-top: 3px;
+        &_mobile{
+            display: none;
+        }
         &:hover{
             color: #ccc;
         }
