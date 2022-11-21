@@ -9,7 +9,7 @@ h1,h2,h3{
 p{
     margin: 0;
 }
-.container-my{
+.container{
     max-width: 1140px;
 }
 .header{
@@ -60,6 +60,17 @@ p{
     &__btn-wrap{
         margin-top: 27px;
     }
+}
+.fa-regular {
+    font-family: 'FontAwesome' !important;
+    color: white;
+    font-size: 25px;
+    
+}
+.hamberger{
+    display: none;
+    
+
 }
 .menu{
     display: flex;
@@ -132,8 +143,6 @@ p{
     &__item{
         padding-left: 36px;
         padding-right: 46px;
-    }
-    &__item{
         display: flex;
         margin-top: 39px;
     }
@@ -417,5 +426,6 @@ p{
         @include text(#1fbad6, 11px, normal);
         text-transform: uppercase;
         margin-bottom: 31px;
+        cursor: pointer;
     }
 }
